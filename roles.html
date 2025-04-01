@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rôles Utilisateurs - Gestion Gas oil (GGAO)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+          <div class="flex space-x-7">
+            <!-- Logo -->
+            <div>
+              <a href="index.html" class="flex items-center py-4 px-2">
+                <i class="fas fa-oil-can text-blue-500 text-2xl mr-2"></i>
+                <span class="font-semibold text-gray-900 text-lg"
+                  >Gestion Gas oil (GGAO)</span
+                >
+              </a>
+            </div>
+            <!-- Primary Nav -->
+            <div class="hidden md:flex items-center space-x-1">
+              <a
+                href="index.html"
+                class="nav-link py-4 px-2 text-gray-700 font-medium"
+                >Introduction</a
+              >
+              <a
+                href="fonctionnalites.html"
+                class="nav-link py-4 px-2 text-gray-700 font-medium"
+                >Fonctionnalités</a
+              >
+              <a
+                href="installation.html"
+                class="nav-link py-4 px-2 text-gray-700 font-medium"
+                >Installation</a
+              >
+              <a
+                href="securite.html"
+                class="nav-link py-4 px-2 text-gray-700 font-medium"
+                >Sécurité</a
+              >
+              <a
+                href="roles.html"
+                class="nav-link py-4 px-2 text-gray-700 font-medium active"
+                >Rôles</a
+              >
+            </div>
+          </div>
+          <!-- Secondary Nav -->
+          <div class="hidden md:flex items-center space-x-3">
+            <button
+              id="theme-toggle"
+              class="p-2 rounded-full hover:bg-gray-200"
+            >
+              <i class="fas fa-moon"></i>
+            </button>
+          </div>
+          <!-- Mobile menu button -->
+          <div class="md:hidden flex items-center">
+            <button class="outline-none mobile-menu-button">
+              <svg
+                class="w-6 h-6 text-gray-700"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div class="hidden mobile-menu">
+        <ul class="">
+          <li>
+            <a
+              href="index.html"
+              class="block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white transition duration-300"
+              >Introduction</a
+            >
+          </li>
+          <li>
+            <a
+              href="fonctionnalites.html"
+              class="block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white transition duration-300"
+              >Fonctionnalités</a
+            >
+          </li>
+          <li>
+            <a
+              href="installation.html"
+              class="block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white transition duration-300"
+              >Installation</a
+            >
+          </li>
+          <li>
+            <a
+              href="securite.html"
+              class="block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white transition duration-300"
+              >Sécurité</a
+            >
+          </li>
+          <li>
+            <a
+              href="roles.html"
+              class="block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white transition duration-300"
+              >Rôles</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+      <h1 class="text-4xl font-bold mb-8 text-center">
+        Gestion des Rôles Utilisateurs
+      </h1>
+
+      <!-- Role Management -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold mb-6 text-gray-800 border-b pb-2">
+          4. Gestion des rôles des utilisateurs
+        </h2>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <p class="text-gray-700 mb-6">
+            Le système de gestion des rôles permet de définir précisément les
+            permissions de chaque type d'utilisateur, garantissant ainsi la
+            sécurité des données et le bon fonctionnement des processus métiers.
+          </p>
+
+          <!-- Role Details -->
+          <div class="space-y-8">
+            <!-- Admin Role -->
+            <div class="border border-gray-200 rounded-lg p-6">
+              <div class="flex items-center mb-4">
+                <i class="fas fa-user-shield text-blue-500 text-2xl mr-3"></i>
+                <h3 class="text-2xl font-semibold">Administrateur</h3>
+              </div>
+              <p class="text-gray-700 mb-4">
+                Le rôle administrateur dispose de tous les droits sur le
+                système. Il peut :
+              </p>
+              <ul class="list-disc pl-5 space-y-2 mb-4">
+                <li>Créer, modifier et supprimer des utilisateurs</li>
+                <li>Configurer tous les paramètres système</li>
+                <li>Accéder à toutes les fonctionnalités sans restriction</li>
+                <li>Générer des rapports complets</li>
+                <li>Modifier les permissions des autres rôles</li>
+              </ul>
+              <div class="bg-blue-50 p-4 rounded-lg">
+                <h4 class="font-semibold text-blue-800 mb-2">
+                  Recommandations :
+                </h4>
+                <p class="text-blue-700">
+                  Ce rôle doit être attribué uniquement aux personnes
+                  responsables de l'administration globale du système.
+                </p>
+              </div>
+            </div>
+
+            <!-- Stock Manager Role -->
+            <div class="border border-gray-200 rounded-lg p-6">
+              <div class="flex items-center mb-4">
+                <i class="fas fa-boxes text-blue-500 text-2xl mr-3"></i>
+                <h3 class="text-2xl font-semibold">Responsable des stocks</h3>
+              </div>
+              <p class="text-gray-700 mb-4">
+                Le responsable des stocks peut gérer tous les aspects liés aux
+                produits et aux dépôts :
+              </p>
+              <ul class="list-disc pl-5 space-y-2 mb-4">
+                <li>Alimenter les dépôts en produits</li>
+                <li>Effectuer des transferts entre dépôts</li>
+                <li>Consulter les niveaux de stock en temps réel</li>
+                <li>Générer des rapports de stock</li>
+                <li>Gérer les bons de ravitaillement</li>
+              </ul>
+              <div class="bg-blue-50 p-4 rounded-lg">
+                <h4 class="font-semibold text-blue-800 mb-2">
+                  Recommandations :
+                </h4>
+                <p class="text-blue-700">
+                  Ce rôle est idéal pour les responsables logistiques et les
+                  gestionnaires de dépôts.
+                </p>
+              </div>
+            </div>
+
+            <!-- Operator Role -->
+            <div class="border border-gray-200 rounded-lg p-6">
+              <div class="flex items-center mb-4">
+                <i class="fas fa-user-cog text-blue-500 text-2xl mr-3"></i>
+                <h3 class="text-2xl font-semibold">Opérateur</h3>
+              </div>
+              <p class="text-gray-700 mb-4">
+                L'opérateur est le rôle standard pour les utilisateurs
+                quotidiens du système :
+              </p>
+              <ul class="list-disc pl-5 space-y-2 mb-4">
+                <li>Saisir les consommations des moteurs</li>
+                <li>Générer des rapports basiques</li>
+                <li>Consulter les historiques de consommation</li>
+                <li>Visualiser les niveaux de stock</li>
+                <li>Gérer les cartes Naftal qui lui sont attribuées</li>
+              </ul>
+              <div class="bg-blue-50 p-4 rounded-lg">
+                <h4 class="font-semibold text-blue-800 mb-2">
+                  Recommandations :
+                </h4>
+                <p class="text-blue-700">
+                  Ce rôle convient aux techniciens et opérateurs terrain qui
+                  doivent enregistrer les consommations.
+                </p>
+              </div>
+            </div>
+
+            <!-- Consultant Role -->
+            <div class="border border-gray-200 rounded-lg p-6">
+              <div class="flex items-center mb-4">
+                <i class="fas fa-eye text-blue-500 text-2xl mr-3"></i>
+                <h3 class="text-2xl font-semibold">Consultant</h3>
+              </div>
+              <p class="text-gray-700 mb-4">
+                Le consultant a un accès en lecture seule à certaines
+                fonctionnalités :
+              </p>
+              <ul class="list-disc pl-5 space-y-2 mb-4">
+                <li>Consulter les rapports générés</li>
+                <li>Visualiser les tendances de consommation</li>
+                <li>Accéder aux historiques (sans modification)</li>
+                <li>Exporter des données pour analyse</li>
+              </ul>
+              <div class="bg-blue-50 p-4 rounded-lg">
+                <h4 class="font-semibold text-blue-800 mb-2">
+                  Recommandations :
+                </h4>
+                <p class="text-blue-700">
+                  Ce rôle est adapté aux auditeurs, consultants externes et
+                  managers qui ont besoin d'accéder aux données sans les
+                  modifier.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- User Management Workflow -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold mb-6 text-gray-800 border-b pb-2">
+          Gestion des utilisateurs
+        </h2>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <p class="text-gray-700 mb-6">
+            La création et la gestion des utilisateurs se fait exclusivement par
+            les administrateurs via une interface dédiée.
+          </p>
+
+          <div class="grid md:grid-cols-3 gap-6">
+            <!-- Creation -->
+            <div class="border border-gray-200 rounded-lg p-4">
+              <div class="flex items-center mb-3">
+                <i class="fas fa-user-plus text-blue-500 text-xl mr-3"></i>
+                <h3 class="text-xl font-semibold">Création d'un utilisateur</h3>
+              </div>
+              <ol class="list-decimal pl-5 space-y-2">
+                <li>Accéder au menu "Gestion des utilisateurs"</li>
+                <li>Cliquer sur "Nouvel utilisateur"</li>
+                <li>Remplir les informations requises</li>
+                <li>Attribuer un rôle</li>
+                <li>Enregistrer</li>
+              </ol>
+            </div>
+
+            <!-- Modification -->
+            <div class="border border-gray-200 rounded-lg p-4">
+              <div class="flex items-center mb-3">
+                <i class="fas fa-user-edit text-blue-500 text-xl mr-3"></i>
+                <h3 class="text-xl font-semibold">
+                  Modification d'un utilisateur
+                </h3>
+              </div>
+              <ol class="list-decimal pl-5 space-y-2">
+                <li>Sélectionner l'utilisateur dans la liste</li>
+                <li>Cliquer sur "Modifier"</li>
+                <li>Apporter les modifications nécessaires</li>
+                <li>Enregistrer les changements</li>
+              </ol>
+            </div>
+
+            <!-- Suppression -->
+            <div class="border border-gray-200 rounded-lg p-4">
+              <div class="flex items-center mb-3">
+                <i class="fas fa-user-times text-blue-500 text-xl mr-3"></i>
+                <h3 class="text-xl font-semibold">
+                  Désactivation d'un utilisateur
+                </h3>
+              </div>
+              <ol class="list-decimal pl-5 space-y-2">
+                <li>Sélectionner l'utilisateur dans la liste</li>
+                <li>Cliquer sur "Désactiver"</li>
+                <li>Confirmer la désactivation</li>
+              </ol>
+              <p class="text-gray-500 text-sm mt-2">
+                Note: Les utilisateurs ne sont pas supprimés mais désactivés
+                pour conserver l'historique.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between">
+          <div class="mb-6 md:mb-0">
+            <h3 class="text-xl font-bold mb-4">Gestion Gas oil (GGAO)</h3>
+            <p class="text-gray-400">
+              Solution de gestion des stocks et consommations
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:grid-cols-3">
+            <div>
+              <h4 class="text-lg font-semibold mb-4">Documentation</h4>
+              <ul class="space-y-2">
+                <li>
+                  <a href="index.html" class="text-gray-400 hover:text-white"
+                    >Introduction</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="fonctionnalites.html"
+                    class="text-gray-400 hover:text-white"
+                    >Fonctionnalités</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="installation.html"
+                    class="text-gray-400 hover:text-white"
+                    >Installation</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold mb-4">Ressources</h4>
+              <ul class="space-y-2">
+                <li>
+                  <a href="securite.html" class="text-gray-400 hover:text-white"
+                    >Sécurité</a
+                  >
+                </li>
+                <li>
+                  <a href="roles.html" class="text-gray-400 hover:text-white"
+                    >Rôles</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-gray-400 hover:text-white">FAQ</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold mb-4">Contact</h4>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="mailto:nouarkherkhachi.houssam@gmail.com"
+                    class="text-gray-400 hover:text-white"
+                    >Support</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="mailto:nouarkherkhachi.houssam@gmail.com"
+                    class="text-gray-400 hover:text-white"
+                    >Email</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="tel:+213 696 477 241"
+                    class="text-gray-400 hover:text-white"
+                    >Téléphone</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-400 text-sm mb-4 md:mb-0">
+            © 2023 Gestion Gas oil (GGAO). Tous droits réservés.
+          </p>
+          <div class="flex space-x-6">
+            <a
+              href="https://github.com/elhoussam/"
+              class="text-gray-400 hover:text-white"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/elhoussam"
+              class="text-gray-400 hover:text-white"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

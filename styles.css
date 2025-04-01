@@ -1,0 +1,142 @@
+/* Custom styles */
+body.dark {
+    background-color: #1a202c;
+    color: #e2e8f0;
+}
+
+body.dark .bg-white {
+    background-color: #2d3748;
+}
+
+body.dark .text-gray-700 {
+    color: #e2e8f0;
+}
+
+body.dark .bg-blue-700 {
+    background-color: #2b6cb0;
+}
+
+body.dark .bg-gray-800 {
+    background-color: #1a202c;
+}
+
+body.dark .text-gray-400 {
+    color: #a0aec0;
+}
+
+/* Navigation */
+.nav-link {
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+    color: #3B82F6;
+    border-bottom: 2px solid #3B82F6;
+}
+
+.nav-link.active {
+    color: #3B82F6;
+    border-bottom: 2px solid #3B82F6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    nav, footer {
+        display: none;
+    }
+    
+    body {
+        background-color: white;
+        color: black;
+        font-size: 12pt;
+    }
+    
+    a::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        font-weight: normal;
+    }
+}
+
+/* Feature cards */
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Installation steps */
+.installation-step {
+    position: relative;
+    padding-left: 3rem;
+}
+
+.installation-step-number {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #3B82F6;
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Tables */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th {
+    background-color: #f3f4f6;
+    text-align: left;
+    padding: 0.75rem;
+    font-weight: 600;
+}
+
+.data-table td {
+    padding: 0.75rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+.data-table tr:hover {
+    background-color: #f9fafb;
+}
+
+/* Dark mode table styles */
+body.dark .data-table th {
+    background-color: #374151;
+}
+
+body.dark .data-table td {
+    border-top-color: #4b5563;
+}
+
+body.dark .data-table tr:hover {
+    background-color: #1f2937;
+}

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Installation - Gestion Gas oil (GGAO)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+          <div class="flex space-x-7">
+            <!-- Logo -->
+            <div>
+              <a href="index.html" class="flex items-center py-4 px-2">
+                <i class="fas fa-oil-can text-blue-500 text-2xl mr-2"></i>
+                <span class="font-semibold text-gray-900 text-lg"
+                  >Gestion Gas oil (GGAO)</span
+                >
+              </a>
+            </div>
+            <!-- Primary Nav -->
+            <div class="hidden md:flex items-center space-x-1">
+              <a
+                href="index.html"
+                class="nav-link py-4 px-2 text-gray-700 font-medium"
+                >Introduction</a
+              >
+              <a
+                href="fonctionnalites.html"
+                class="nav-link py-4 px-2 text-gray-700 font-medium"
+                >Fonctionnalités</a
+              >
+              <a
+                href="installation.html"
+                class="nav-link py-4 px-2 text-gray-700 font-medium active"
+                >Installation</a
+              >
+              <a
+                href="securite.html"
+                class="nav-link py-4 px-2 text-gray-700 font-medium"
+                >Sécurité</a
+              >
+              <a
+                href="roles.html"
+                class="nav-link py-4 px-2 text-gray-700 font-medium"
+                >Rôles</a
+              >
+            </div>
+          </div>
+          <!-- Secondary Nav -->
+          <div class="hidden md:flex items-center space-x-3">
+            <button
+              id="theme-toggle"
+              class="p-2 rounded-full hover:bg-gray-200"
+            >
+              <i class="fas fa-moon"></i>
+            </button>
+          </div>
+          <!-- Mobile menu button -->
+          <div class="md:hidden flex items-center">
+            <button class="outline-none mobile-menu-button">
+              <svg
+                class="w-6 h-6 text-gray-700"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div class="hidden mobile-menu">
+        <ul class="">
+          <li>
+            <a
+              href="index.html"
+              class="block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white transition duration-300"
+              >Introduction</a
+            >
+          </li>
+          <li>
+            <a
+              href="fonctionnalites.html"
+              class="block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white transition duration-300"
+              >Fonctionnalités</a
+            >
+          </li>
+          <li>
+            <a
+              href="installation.html"
+              class="block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white transition duration-300"
+              >Installation</a
+            >
+          </li>
+          <li>
+            <a
+              href="securite.html"
+              class="block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white transition duration-300"
+              >Sécurité</a
+            >
+          </li>
+          <li>
+            <a
+              href="roles.html"
+              class="block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white transition duration-300"
+              >Rôles</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+      <h1 class="text-4xl font-bold mb-8 text-center">Guide d'Installation</h1>
+
+      <!-- Mode Solo Installation -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold mb-6 text-gray-800 border-b pb-2">
+          7. Installation (Mode Solo)
+        </h2>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <p class="text-gray-700 mb-6">
+            Pour installer l'application en mode Solo, veuillez suivre les
+            étapes ci-dessous :
+          </p>
+
+          <!-- Installation Steps -->
+          <div class="space-y-8">
+            <!-- Step 1 -->
+            <div class="installation-step">
+              <div class="installation-step-number">1</div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">
+                  7.1 Téléchargement des fichiers requis
+                </h3>
+                <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                  <ul class="space-y-2">
+                    <li class="flex items-center">
+                      <i class="fas fa-database text-blue-500 mr-2"></i>
+                      <span
+                        >Base de données locale :
+                        <a
+                          href="https://drive.google.com/file/d/1-cDVpC2PMNWjD8XYLlg8bHZVpRcBCDft/view?usp=drive_link"
+                          class="text-blue-600 hover:underline"
+                          >Télécharger ici</a
+                        >
+                      </span>
+                    </li>
+                    <li class="flex items-center">
+                      <i class="fab fa-windows text-blue-500 mr-2"></i>
+                      <span
+                        >Framework .NET :
+                        <a
+                          href="https://drive.google.com/file/d/1fxEa7rb2Y-d9SuEyxYtC5JbvuOKhj8_B/view"
+                          class="text-blue-600 hover:underline"
+                          >Télécharger ici</a
+                        ></span
+                      >
+                    </li>
+                    <li class="flex items-center">
+                      <i class="fas fa-download text-blue-500 mr-2"></i>
+                      <span
+                        >Fichier d'installation (Setup) :
+                        <a
+                          href="https://drive.google.com/file/d/1gX1p8nkiXK9dQzP7_h8McUUEwF1J4LS9/view?usp=drive_link"
+                          class="text-blue-600 hover:underline"
+                          >Télécharger DB ici</a
+                        >
+                        <a
+                          href="https://drive.google.com/file/d/1q-YCY9Kn9CJi7Ha1F0mV4L7XvsrlBm4F/view?usp=drive_link"
+                          class="text-blue-600 hover:underline"
+                        >
+                          , Setup ici</a
+                        >
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <p class="text-gray-700">
+                  NB: En cas de multi mode nécessitant une configuration
+                  personnalisée, contacter la elhoussam
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="installation-step">
+              <div class="installation-step-number">2</div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">
+                  Installation de la base de données
+                </h3>
+                <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                  <ol class="list-decimal pl-5 space-y-2">
+                    <li>
+                      Exécutez le fichier d'installation de la base de données
+                    </li>
+                    <li>
+                      Suivez les instructions de l'assistant d'installation
+                    </li>
+                    <li>
+                      Notez le chemin d'installation pour la configuration
+                      ultérieure
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="installation-step">
+              <div class="installation-step-number">3</div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">
+                  Installation du Framework .NET
+                </h3>
+                <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                  <ol class="list-decimal pl-5 space-y-2">
+                    <li>
+                      Exécutez le programme d'installation de .NET Framework
+                    </li>
+                    <li>Acceptez les termes de licence</li>
+                    <li>
+                      Attendez la fin de l'installation (peut prendre plusieurs
+                      minutes)
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="installation-step">
+              <div class="installation-step-number">4</div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">
+                  Installation de l'application
+                </h3>
+                <div class="bg-gray-100 p-4 rounded-lg">
+                  <ol class="list-decimal pl-5 space-y-2">
+                    <li>Exécutez le fichier setup.exe</li>
+                    <li>Choisissez le répertoire d'installation</li>
+                    <li>Configurez le chemin d'accès à la base de données</li>
+                    <li>Complétez l'installation</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Troubleshooting -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-2xl font-semibold mb-4 flex items-center">
+            <i class="fas fa-tools text-blue-500 mr-3"></i>
+            Dépannage
+          </h3>
+
+          <div class="space-y-4">
+            <div class="border-l-4 border-blue-500 pl-4">
+              <h4 class="font-semibold">
+                Erreur de connexion à la base de données
+              </h4>
+              <p class="text-gray-700">
+                Vérifiez que le service de base de données est démarré et que le
+                chemin d'accès est correct.
+              </p>
+            </div>
+
+            <div class="border-l-4 border-blue-500 pl-4">
+              <h4 class="font-semibold">Framework .NET manquant</h4>
+              <p class="text-gray-700">
+                Assurez-vous d'avoir installé la version requise de .NET
+                Framework avant d'installer l'application.
+              </p>
+            </div>
+
+            <div class="border-l-4 border-blue-500 pl-4">
+              <h4 class="font-semibold">Problèmes de permissions</h4>
+              <p class="text-gray-700">
+                Exécutez l'installation en tant qu'administrateur si vous
+                rencontrez des erreurs d'accès.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between">
+          <div class="mb-6 md:mb-0">
+            <h3 class="text-xl font-bold mb-4">Gestion Gas oil (GGAO)</h3>
+            <p class="text-gray-400">
+              Solution de gestion des stocks et consommations
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:grid-cols-3">
+            <div>
+              <h4 class="text-lg font-semibold mb-4">Documentation</h4>
+              <ul class="space-y-2">
+                <li>
+                  <a href="index.html" class="text-gray-400 hover:text-white"
+                    >Introduction</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="fonctionnalites.html"
+                    class="text-gray-400 hover:text-white"
+                    >Fonctionnalités</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="installation.html"
+                    class="text-gray-400 hover:text-white"
+                    >Installation</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold mb-4">Ressources</h4>
+              <ul class="space-y-2">
+                <li>
+                  <a href="securite.html" class="text-gray-400 hover:text-white"
+                    >Sécurité</a
+                  >
+                </li>
+                <li>
+                  <a href="roles.html" class="text-gray-400 hover:text-white"
+                    >Rôles</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-gray-400 hover:text-white">FAQ</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold mb-4">Contact</h4>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="mailto:nouarkherkhachi.houssam@gmail.com"
+                    class="text-gray-400 hover:text-white"
+                    >Support</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="mailto:nouarkherkhachi.houssam@gmail.com"
+                    class="text-gray-400 hover:text-white"
+                    >Email</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="tel:+213 696 477 241"
+                    class="text-gray-400 hover:text-white"
+                    >Téléphone</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-400 text-sm mb-4 md:mb-0">
+            © 2023 Gestion Gas oil (GGAO). Tous droits réservés.
+          </p>
+          <div class="flex space-x-6">
+            <a
+              href="https://github.com/elhoussam/"
+              class="text-gray-400 hover:text-white"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/elhoussam"
+              class="text-gray-400 hover:text-white"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
